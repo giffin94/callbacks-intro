@@ -2,12 +2,10 @@
 
 
 function findWaldo(arr, found) {
-  var currentElement = 0;
-  arr.forEach(function(name) {
+  arr.forEach(function(name, i) {
     if(name === "Waldo") {
-      found(currentElement);
+      found(i);
     }
-    currentElement++;
   });
 }
 
